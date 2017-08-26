@@ -6,7 +6,7 @@ You can simply copy the scripts and put them in your own repository or&mdash;bet
 
 ## `ecsc`
 
-`use-ecsc.mk` tries to find the `ecsc` compiler and exposes it using the `ECSC` variable. If there's no global `ecsc` command, then `use-ecsc.mk` builds `ecsc` from source and makes `$(ECSC)` expand to a command that runs the local `ecsc` build.
+[`use-ecsc.mk`](use-ecsc.mk) tries to find the `ecsc` compiler and exposes it using the `ECSC` variable. If there's no global `ecsc` command, then `use-ecsc.mk` builds `ecsc` from source and makes `$(ECSC)` expand to a command that runs the local `ecsc` build.
 
 Here's an example Makefile that uses `use-ecsc.mk` to provide `ecsc`.
 
