@@ -65,7 +65,7 @@ local-compare-test: $(LOCAL_COMPARE_TEST_EXE)
 $(LOCAL_COMPARE_TEST_EXE):
 	mkdir -p $(TOOLCHAIN_DIR)
 	wget -q --show-progress $(COMPARE_TEST_ZIP_URL) -O $(LOCAL_COMPARE_TEST_ZIP)
-	unzip -d $(LOCAL_COMPARE_TEST_DIR) $(LOCAL_COMPARE_TEST_ZIP)
+	unzip --qq -d $(LOCAL_COMPARE_TEST_DIR) $(LOCAL_COMPARE_TEST_ZIP)
 	rm $(LOCAL_COMPARE_TEST_ZIP)
 
 # 'clean-compare-test' deletes a local copy of compare-test, if one has been created.
