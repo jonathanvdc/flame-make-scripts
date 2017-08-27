@@ -1,5 +1,7 @@
 # Flame Makefile scripts
 
+[![Build Status](https://travis-ci.org/jonathanvdc/flame-make-scripts.svg?branch=master)](https://travis-ci.org/jonathanvdc/flame-make-scripts)
+
 This repository contains a collection of GNU Make scripts that locate and/or install Flame-based projects. The goal of these scripts is to minimize the amount of hassle users experience when building your project: they either find an existing install of a tool or automatically build it from source. Running `make` should Just Work.
 
 You can simply copy the scripts and put them in your own repository or&mdash;better yet&mdash;include this repository as a git submodule.
