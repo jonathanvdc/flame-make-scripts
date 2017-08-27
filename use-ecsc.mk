@@ -63,7 +63,6 @@ ecsc: $(ECSC_DEPENDENCIES)
 local-ecsc: $(LOCAL_ECSC_EXE)
 
 $(LOCAL_ECSC_EXE):
-	cd "$(ROOT_DIR)"
 	if [ ! -d "$(LOCAL_ECSC_DIR)" ]; then \
 		git clone --depth=1 $(ECSC_GIT_REPO) "$(LOCAL_ECSC_DIR)"; \
 	fi
