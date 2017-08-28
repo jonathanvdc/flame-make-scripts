@@ -1,5 +1,19 @@
 language: csharp
 dist: trusty
+
+matrix:
+  include:
+    - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+            - llvm-toolchain-precise-3.8
+          packages:
+            - llvm-3.8-dev
+            - clang-3.8
+            - libgc-dev
+
 script:
   - make
   - make clean
