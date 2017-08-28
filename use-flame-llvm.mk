@@ -10,8 +10,8 @@
 #
 #     include /path/to/use-flame-llvm.mk
 #
-#     out.exe: code.cs | flame-llvm
-#         $(FLAME_LLVM) code.cs -platform clr -o out.exe
+#     out.ll: obj.flo | flame-llvm
+#         $(FLAME_LLVM) obj.flo -platform llvm -o out.ll
 #
 # You may also want to extend your 'make clean' target by adding
 # a dependency on 'clean-flame-llvm'. That'll ensure that a local 'flame-llvm'
