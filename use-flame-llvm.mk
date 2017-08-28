@@ -69,7 +69,7 @@ local-flame-llvm: $(LOCAL_FLAME_LLVM_EXE)
 
 $(LOCAL_FLAME_LLVM_EXE):
 	if [ ! -d "$(LOCAL_FLAME_LLVM_DIR)" ]; then \
-		git clone --recursive --shallow-submodules --depth=1 $(FLAME_LLVM_GIT_REPO) "$(LOCAL_FLAME_LLVM_DIR)"; \
+		git clone --recursive --depth=1 $(FLAME_LLVM_GIT_REPO) "$(LOCAL_FLAME_LLVM_DIR)"; \
 	fi
 	cd "$(LOCAL_FLAME_LLVM_DIR)"; ./build-libs.sh $(LIBLLVM_PATH)
 	make -C "$(LOCAL_FLAME_LLVM_DIR)" nuget
