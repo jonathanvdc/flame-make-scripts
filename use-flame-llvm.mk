@@ -55,7 +55,7 @@ endif
 
 # TODO: maybe try harder to find libLLVM
 ifeq ($(LIBLLVM_PATH),)
-LIBLLVM_PATH=/usr/lib/llvm-3.8/lib/libLLVM.so
+LIBLLVM_PATH=/usr/lib/llvm-4.0/lib/libLLVM.so
 endif
 
 # 'flame-llvm' uses a global flame-llvm command if possible and installs a local
